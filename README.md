@@ -1,7 +1,7 @@
 # NX-InputSystem
 A basic input system for Nintendo Switch written in C++
 
-Supports both gamepad and keyboard inputs.
+Supports both gamepad and keyboard inputs.<br>
 Note: `inputService.update();` should be called every frame for this system to work.
 
 Usage:
