@@ -25,7 +25,7 @@ auto& inputChangedConn = inputService.inputChanged.connect([](InputSystem& input
   }
 
   // or get its HID usage keycode
-  printf(std::to_string(inputObject.keyCode))
+  printf(std::to_string(inputObject.keyCode));
 
   // you can also get its input type
   if (inputObject.inputType == InputType::Gamepad){
