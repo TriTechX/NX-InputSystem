@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 
-#include <System/Input.hpp>
-#include <System/Signal.hpp>
+#include "Input.hpp"
+#include "Signal.hpp"
 
 // The InputObject constructor
 InputObject::InputObject(InputType inputType, int keyCode){
