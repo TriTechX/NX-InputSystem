@@ -5,7 +5,7 @@
 #include <optional>
 #include <unordered_map>
 
-#include <System/Signal.hpp>
+#include "Signal.hpp"
 
 enum class InputState{
     Begin,
