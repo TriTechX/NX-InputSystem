@@ -2,6 +2,7 @@
 A basic input system for Nintendo Switch written in C++
 
 Supports both gamepad and keyboard inputs.
+Note: `inputService.update();` should be called every frame for this system to work.
 
 Usage:
 ```cpp
