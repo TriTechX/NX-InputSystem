@@ -6,7 +6,6 @@
 
 #include <System/Input.hpp>
 #include <System/Signal.hpp>
-#include <Utils/Utils.hpp>
 
 // The InputObject constructor
 InputObject::InputObject(InputType inputType, int keyCode){
@@ -97,7 +96,7 @@ void InputSystem::update(){
 }
 
 void InputSystem::init(){
-    log("[INPUT] - Initialising InputSystem...");
+    // log("[INPUT] - Initialising InputSystem...");
 
     padConfigureInput(1, HidNpadStyleSet_NpadStandard);
     padInitializeDefault(&gamepad);
@@ -105,7 +104,7 @@ void InputSystem::init(){
     // also initialise keyboard
     hidInitializeKeyboard();
 
-    log("[INPUT] - InputSystem initialised successfully!");
+    // log("[INPUT] - InputSystem initialised successfully!");
 }
 
 // nice abstractions
@@ -281,7 +280,7 @@ std::string InputSystem::HidUsageToString(int hidCode){
 void InputSystem::bind(std::string bindID, const InputObject& inputObject){
     // set the new binding      
     bindings.insert_or_assign(bindID, inputObject);
-    log("[INPUT] - Successfully bound '"+bindID+"'!"); 
+    // log("[INPUT] - Successfully bound '"+bindID+"'!"); 
 }
 
 void InputSystem::unbind(const std::string& bindID){
